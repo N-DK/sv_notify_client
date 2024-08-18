@@ -1,0 +1,33 @@
+{
+    "name": "notify-services",
+    "version": "1.0.1",
+    "description": "A notify server typescript with nodejs/express",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "start": "nodemon notify-service.ts"
+    },
+    "author": "ndk271103",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.3",
+        "nodemon": "^3.1.4",
+        "notify-services": "^1.0.1",
+        "ts-node": "^10.9.2"
+    },
+    "devDependencies": {
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "typescript",
+        "notify"
+    ]
+}
