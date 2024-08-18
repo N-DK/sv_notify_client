@@ -7,7 +7,7 @@ NotifyService is a robust Node.js module designed to seamlessly manage notificat
 Install NotifyService via npm:
 
 ```bash
-npm install notify-service
+npm install notify-services
 ```
 
 ## Features
@@ -26,7 +26,7 @@ Here’s an example of how to use the `eventFeature` to send a promotional notif
 Create a file named `notify-service.ts`:
 
 ```typescript
-import { eventFeature, keywords } from 'notify-service';
+import { eventFeature, keywords } from 'notify-services';
 
 const SERVER_URL = 'http://localhost:3005';
 
@@ -59,7 +59,7 @@ In this example:
 NotifyService also allows you to receive and manage notifications for your users:
 
 ```typescript
-import { eventFeature } from 'notify-service';
+import { eventFeature } from 'notify-services';
 
 const SERVER_URL = 'http://localhost:3005';
 
@@ -102,5 +102,5 @@ import {
     regionsFeature,
     systemFeature,
     keywords,
-} from 'notify-service';
+} from 'notify-services';
 ```
