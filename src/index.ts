@@ -4,6 +4,7 @@ import gpsFeature from './features/gps.feature';
 import ioFeature from './features/io.feature';
 import regionsFeature from './features/regions.feature';
 import systemFeature from './features/system.feature';
+import remindFeature from './features/remind.feature';
 import { keywords } from './constant/keywords.constant';
 
 export {
@@ -13,5 +14,6 @@ export {
     ioFeature,
     regionsFeature,
     systemFeature,
+    remindFeature,
     keywords,
 };
