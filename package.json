@@ -1,6 +1,6 @@
 {
     "name": "notify-services",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A notify server typescript with nodejs/express",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",

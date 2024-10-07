@@ -1,13 +1,13 @@
-import notifyRemind from './src/features/remind.feature';
+import { eventFeature, gpsFeature, ioFeature } from 'notify-services';
 
-const SERVER_URL = 'http://localhost:3005';
+const SERVER_URL = 'http://localhost:3003';
 
 const main = async () => {
     try {
-        await notifyRemind.sendNotifyRemind(SERVER_URL, {
-            name_remind: 'Change oil',
-            vehicle_name: 'Honda Civic',
-            user_id: 5,
+        await ioFeature.sendNotifyVehicleOverheat(SERVER_URL, {
+            temperature: '123',
+            user_id: 113,
+            vehicle_name: 'vehicle',
         });
     } catch (error) {
         console.error('Error sending notification:', error);
