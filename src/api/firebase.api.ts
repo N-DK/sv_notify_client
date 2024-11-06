@@ -11,10 +11,15 @@ class FirebaseAPI {
         );
     }
 
-    async getNotification(user_id: number, baseURL: string) {
-        return await axiosAlarm(baseURL).get(
-            `/api/v1/notification/get-notification/${user_id}`,
-        );
+    async getNotification(
+        user_id: number,
+        baseURL: string,
+        query: { [key: string]: string | number } = {},
+    ) {
+        const url = `/api/v1/notification/get-notification/${user_id}`;
+        const params = new URLSearchParams(query as Record<string, string>);
+
+        return await axiosAlarm(baseURL).get(`${url}?${params.toString()}`);
     }
 
     async seenNotification(notification_id: number, baseURL: string) {

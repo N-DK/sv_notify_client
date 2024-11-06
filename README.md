@@ -70,6 +70,7 @@ const main = async () => {
         const notifications = await eventFeature.getNotification(
             user_id,
             SERVER_URL,
+            { limit: 10, offset: 0 }, // {limit, offset, keyword, type} (keyword use search)
         );
         console.log('Notifications:', notifications);
 
