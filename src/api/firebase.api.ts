@@ -27,6 +27,17 @@ class FirebaseAPI {
             `/api/v1/notification/seen-notification/${notification_id}`,
         );
     }
+
+    async sendNotificationByDeviceId(
+        baseURL: string,
+        device_id: string,
+        data: NotifyDataType,
+    ) {
+        return await axiosAlarm(baseURL).post(
+            `/api/v1/notification/send-notification/${device_id}`,
+            data,
+        );
+    }
 }
 
 export default FirebaseAPI;
