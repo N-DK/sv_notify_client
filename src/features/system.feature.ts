@@ -8,13 +8,15 @@ class SystemFeature extends FirebaseAPI {
     }
     async sendNotifySystemMaintenance(
         baseURL: string,
-        { start_time, end_time }: NotifySystemMaintenanceType,
+        { start_time, end_time, time, date }: NotifySystemMaintenanceType,
     ) {
         const data = {
             keyword: keywords.NOTIFY_SYSTEM_MAINTENANCE,
             replaces: {
                 start_time,
                 end_time,
+                time, 
+                date
             },
         };
         return await this.sendNotification(data, baseURL);

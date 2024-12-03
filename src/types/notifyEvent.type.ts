@@ -4,6 +4,6 @@ export type NotifyEventType = {
     time: string;
     company_name: string;
     location_name: string;
-    user_id?: number;
+    user_id?: number[];
     keyword?: string;
 };
