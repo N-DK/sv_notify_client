@@ -10,7 +10,8 @@
     ],
     "scripts": {
         "build": "tsup",
-        "start": "nodemon notify-service.ts"
+        "start": "ts-node notify-service.ts",
+        "dev": "nodemon notify-service.ts"
     },
     "author": "ndk271103",
     "license": "ISC",
